@@ -464,3 +464,35 @@ a.login-face{
 a.login-face img{
   height: 14px;
 }
+.search-form .bo1{
+  width: 30%;
+  float: left;
+  border:none;
+  border-radius: 8px 0px  0px 8px;
+  color: #fff;
+  font-family: Kanit-Regular;
+  color: #b0adad;
+  font-size: 16px;
+  height: 40px;
+}
+.search-form .bo2{
+  width: 60%;
+  float: left;
+  border:none;
+  background-color: #e9e9e9;
+  border-radius:  0px ;
+  text-align: center;
+  color: #b0adad;
+  font-size: 16px;
+  font-family: Kanit-Regular;
+  height: 40px;
+}
+.btn-search{
+  border:none;
+  border-radius: 8px;
+  width: 10%;
+  float: left;
+  height: 40px;
+  margin-left: -6px;
+  background-color: #ffffff;
+}
