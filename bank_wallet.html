@@ -12,6 +12,9 @@
    
    <link rel="icon" type="image/x-icon" href="images/logo.png">
    <title> Topup </title>
+
+   <link href="css/wickedpicker.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -24,15 +27,15 @@
             <button type="button" data-toggle="collapse" data-target="#navbarM" aria-controls="navbarM" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
             <div id="navbarM" class="collapse navbar-collapse">
                <ul class="navbar-nav ">
-                  <li class="nav-item active">
+                  <li class="nav-item">
                      <a href="index.html" class="nav-link">หน้าแรก </a>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown active">
                      <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                      เป๋าตังค์
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="bank_wallet.html">แจ้งโอนธนาคาร</a>
+                        <a class="dropdown-item active" href="bank_wallet.html">แจ้งโอนธนาคาร</a>
                         <a class="dropdown-item" href="true_money.html">บัตรทรูมันนี่</a>
                         <a class="dropdown-item" href="true_wallet.html">แจ้งโอนวอลเล็ท</a>
                      </div>
@@ -100,90 +103,10 @@
    </header>
 
    <main>
-      <section class="banner">
-         <div id="banner" class="carousel slide carousel-fade" data-ride="carousel">
-           
-            <ul class="carousel-indicators">
-               <li data-target="#banner" data-slide-to="0" class="active"></li>
-               <li data-target="#banner" data-slide-to="1"></li>
-               <li data-target="#banner" data-slide-to="2"></li>
-            </ul>
-         
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <img src="images/banner.jpg" class="img-fluid d-block mx-auto" >
-               </div>
-               <div class="carousel-item">
-                  <img src="images/banner.jpg" class="img-fluid d-block mx-auto" >
-               </div>
-               <div class="carousel-item">
-                  <img src="images/banner.jpg" class="img-fluid d-block mx-auto" >
-               </div>               
-            </div>
+      <section class="banner-top">
+         <h1>เติมเงิน ผ่านธนาคาร / พร้อมเพย์</h1>
+      </section>
       
-            <a class="carousel-control-prev" href="#banner" data-slide="prev">
-               <span>
-                  <i class="fas fa-chevron-left"></i>
-               </span>
-            </a>
-            <a class="carousel-control-next" href="#banner" data-slide="next">
-               <span>
-                  <i class="fas fa-chevron-right"></i>
-               </span>
-            </a>
-         </div>
-      </section>
-      <section>
-         <div class="container">
-            <div class="clearfix">&nbsp;</div>
-            <div class="clearfix">&nbsp;</div>
-            <div class="clearfix">&nbsp;</div>
-            <div class="col col-box3">
-               <div class="row">
-                  <div class="col-lg-4">
-                     <div class="box">
-                        <img src="images/icon-1.png" class="img-fluid d-block mx-auto" >
-                        <h3>เติมเงินเกมมือถือ</h3>
-                        <h5>TOP UP CENTER</h5>
-                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                     <div class="box">
-                        <img src="images/icon-2.png" class="img-fluid d-block mx-auto" >
-                        <h3>บัตรเติมเงินเกม</h3>
-                        <h5>TOP UP game</h5>
-                     </div>
-                  </div>
-                  <div class="col-lg-4">
-                     <div class="box">
-                        <img src="images/icon-3.png" class="img-fluid d-block mx-auto" >
-                        <h3>วิธีเติมเงิน</h3>
-                        <h5>How to</h5>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="clearfix">&nbsp;</div>
-            <div class="clearfix">&nbsp;</div>
-            <div class="clearfix">&nbsp;</div>
-         </div>
-      </section>
-      <section class="tap-contact">
-         <div class="container-fluid">             
-            <div class="row">
-               <div class="col-lg-4 boxx1">
-                  <div class="tri-g"></div>
-                  <h1>ติดต่อทีมงาน</h1>
-               </div>
-               <div class="col-lg-8 boxx2">
-                  <h3><img src="images/phone.png"> 089 4029883, 092 1172728</h3>
-                  <h3><img src="images/line.png"> topupcenter</h3>
-                  <h3><img src="images/facebook.png"> เจ๊น้ำการค้า</h3>
-               </div>
-            </div>            
-         </div>
-      </section>
-
       <div class="clearfix">&nbsp;</div>
       <div class="clearfix">&nbsp;</div>
 
@@ -193,13 +116,18 @@
                <div class="col-lg-8">
                   <div class="row">
                      <div class="col-lg-3">
+                        <div class="col box-show-m">
+                           <h5>ยอดเงินในเป๋าตังค์</h5>
+                           <h2>20,000</h2>
+                           <h4>บาท</h4>
+                        </div>
                         <div class="clearfix">&nbsp;</div>
                         <div class="col menux">
                            <div class="h">
                               เป๋าตังค์
                            </div>
                            <ul>
-                              <li>
+                              <li class="active">
                                  <a href="#"><img src="images/bank.png"> แจ้งโอนธนาคาร</a>
                               </li>
                               <li>
@@ -261,102 +189,90 @@
                      </div>
                      <div class="col-lg-9">
                         <div class="col none-pad">
-                           <div class="row">
-                              <div class="col-lg-6">
-                                 <h3 class="h3x">สินค้ายอดฮิต</h3>
-                              </div>
-                              <div class="col-lg-6 form-xf">
-                                 <div class="col">
-                                    <div class="form-group row">
-                                       <label for="selx" class="col-4 text-right">ตัวกรอง</label>
-                                       <select class="form-control col-8" id="selx">
-                                          <option>Razer Gold Malaysia</option>
-                                          <option>MY CARD (MY) 3000 point</option>
-                                          <option>EX Cash card</option>
-                                       </select>
-                                    </div>
-                                 </div>                              
-                              </div>
-                           </div> 
+                           
+                           <div class="col-lg-12">
+                              <h3 class="h3x">เติมเงินเข้าบัญชีเป๋าตังค์</h3>
+                           </div>
 
-                           <div class="row box-inline">
-                              <div class="col-lg-4">
-                                 <a href="#">
-                                    <div class="bbx">
-                                       <img src="images/itune.png" class="img-fluid d-block mx-auto">
-                                    </div>
-                                    <div class="mx">
-                                       <h3>100$ ITUNE GIFT CARD USA</h3>
-                                       <a href="#" class="btn-rou">
-                                          ดูรายละเอียดสินค้า
-                                       </a>
-                                    </div>
-                                 </a>
-                              </div>
-                              <div class="col-lg-4">
-                                 <a href="#">
-                                    <div class="bbx">
-                                       <img src="images/google.png" class="img-fluid d-block mx-auto">
-                                    </div>
-                                    <div class="mx">
-                                       <h3>25$ Google Play Gift Card USA</h3>
-                                       <a href="#" class="btn-rou not">
-                                          ดูรายละเอียดสินค้า
-                                       </a>
-                                    </div>
-                                 </a>
-                              </div>
-                              <div class="col-lg-4">
-                                 <a href="#">
-                                    <div class="bbx">
-                                       <img src="images/steam.png" class="img-fluid d-block mx-auto">
-                                    </div>
-                                    <div class="mx">
-                                       <h3>20$ STEAM GIFT CARD USA</h3>
-                                       <a href="#" class="btn-rou not">
-                                          ดูรายละเอียดสินค้า
-                                       </a>
-                                    </div>
-                                 </a>
-                              </div>
-                              <div class="col-lg-4">
-                                 <a href="#">
-                                    <div class="bbx">
-                                       <img src="images/razer_card.png" class="img-fluid d-block mx-auto">
-                                    </div>
-                                    <div class="mx">
-                                       <h3>100$ ITUNE GIFT CARD USA</h3>
-                                       <a href="#" class="btn-rou not">
-                                          ดูรายละเอียดสินค้า
-                                       </a>
-                                    </div>
-                                 </a>
-                              </div>
-                              <div class="col-lg-4">
-                                 <a href="#">
-                                    <div class="bbx">
-                                       <img src="images/my_card_card.png" class="img-fluid d-block mx-auto">
-                                    </div>
-                                    <div class="mx">
-                                       <h3>25$ Google Play Gift Card USA</h3>
-                                       <a href="#" class="btn-rou not">
-                                          ดูรายละเอียดสินค้า
-                                       </a>
-                                    </div>
-                                 </a>
-                              </div>
-                              <div class="col-lg-4">
-                                 <a href="#">
-                                    <div class="bbx">
-                                       <img src="images/ex_cash_card.png" class="img-fluid d-block mx-auto">
-                                    </div>
-                                    <div class="mx">
-                                       <h3>20$ STEAM GIFT CARD USA</h3>
-                                       <a href="#" class="btn-rou not">
-                                          ดูรายละเอียดสินค้า
-                                       </a>
-                                    </div>
-                                 </a>
+                           <div class="clearfix">&nbsp;</div>
+                    
+
+                           <div class="col bank-add">
+                              <h3 class="pa-h3">เติมเงิน ผ่านธนาคาร / พร้อมเพย์</h3>
+                              <div class="col box-add">
+                               
+                                 <p class="warn">หลังโอนรอ 1 - 2 นาที นำข้อมูลในสลิปมากรอกให้ตรง ( 1 บาท = 1 Point )</p>
+                                 <div class="table-responsive tb1">
+                                    <table class="table table-borderless ">
+                                       <thead>
+                                          <tr>
+                                             <th>ธนาคาร</th>
+                                             <th>ชื่อบัญชี</th>
+                                             <th>เลขบัญชี</th>
+                                          </tr>
+                                       </thead>
+                                       <tbody>
+                                          <tr>
+                                             <td><img src="images/kbank.png"> กสิกรไทย</td>
+                                             <td>หจก.ท็อปอัพ เซนเตอร์</td>
+                                             <td>067 - 1 - 30901 - 4</td>
+                                          </tr>
+                                          <tr>
+                                             <td><img src="images/kbank.png"> กสิกรไทย</td>
+                                             <td>หจก.ท็อปอัพ เซนเตอร์</td>
+                                             <td>067 - 1 - 30901 - 4</td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </div>
+                                 
+                                 <div class="col">
+                                    <div class="col">
+                                       <form class="form-bank ">                                     
+                                          <div class="form-group">
+                                             <label for="bank_select">ธนาคาร*</label>
+                                             <select class="form-control bo1" id="bank_select">
+                                                <option disabled selected>เลือกธนาคาร</option>
+                                                <option>Category 1</option>
+                                                <option>Category 2</option>
+                                                <option>Category 3</option>
+                                                <option>Category 4</option>
+                                            </select>
+                                          </div>
+                                          <div class="form-group">
+                                             <label for="date">กรอกวันที่ ค.ศ. เท่านั้น*</label>            
+                                             <input type="text" min="0" class="form-control date" id="date" placeholder="MM / DD / YYYY">    
+                                          </div> 
+                                          <div class="form-group">
+                                             <label for="time">กรอกเวลา*</label>
+                                             <input type="text" class="form-control timepicker" id="time" placeholder="-- : -- ">                                    
+                                          </div>   
+                                          <div class="form-group">
+                                             <label for="amount">จำนวนเงิน*</label>
+                                             <input type="number" min="0" class="form-control" id="amount" placeholder="กรอกจำนวนเงินที่ต้องการโอน">                                        
+                                          </div>                                    
+                                       </div>
+
+                                       <div class="clearfix">&nbsp;</div>
+                                       <div class="text-center">
+                                          <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+                                       </div>
+
+                                       <div class="text-center">
+                                          <button type="submit" class="submitx2">ยืนยันเติมเงิน</button>
+                                       </div>
+                                       <div class="clearfix">&nbsp;</div>
+                                       <div class="text-center text-b-art">
+                                          <span>ไม่แนะนำให้โอน ในช่วงเวลา 22:00 - 23.30 และ 3.00 - ตี 5.00    </span> 
+                                          <a href="#" class="text-log">
+                                          ไม่รู้วิธีเติมเงิน กดที่นี้เลย !!
+                                          </a>
+                                       </div>
+
+                                    </form>
+                                 </div>
+
+
                               </div>
                            </div>
                          
@@ -375,7 +291,7 @@
          <div class="col">
             <img src="images/logo_card.png" class="img-fluid d-block mx-auto">
          </div> 
-      </section>      
+      </section>       
    </main>
 
 
@@ -484,11 +400,33 @@
       </div>
    </div>
 
+   
  
 
    <div id="fb-root"></div>
    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v6.0&appId=3087114857965890&autoLogAppEvents=1"></script>
    <script src='https://www.google.com/recaptcha/api.js'></script>
+   <script type="text/javascript" src="js/wickedpicker.js"></script> 
+
+   <script src="js/bootstrap-datepicker.min.js"></script>
+   <script src="js/bootstrap-datepicker.th.min.js"></script>
+   <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+
+
+
+   <script type="text/javascript">
+      $('.timepicker').wickedpicker({twentyFour: true});
+      $('.date').datepicker({
+         format: "mm/dd/yyyy",
+         todayBtn: "linked",
+         language: "en",
+         autoclose: true,
+         todayHighlight: true
+      }); 
+      $(".date").datepicker('setDate', new Date());
+   </script>
+
+
 </body>
  
 

@@ -79,12 +79,21 @@ a:hover{
   font-size: 18px;
   font-family: Kanit-Regular;
 }
-.navbar .navbar-nav .nav-item.active .nav-link{
+.navbar .navbar-nav .nav-item.active .nav-link,.navbar .navbar-nav .nav-item .nav-link:hover{
   color: #f85252;
 }
-.navbar .navbar-nav .nav-item .nav-link:hover{
-  color: #f85252;
+
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item{
+  color: #282828;
+  font-size: 18px;
+  font-family: Kanit-Regular;
 }
+.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item.active,.navbar .navbar-nav .nav-item .dropdown-menu .dropdown-item:hover{
+  color: #f85252;
+  background-color: #EDEDED;
+}
+
+
 .sub-h{
   background-color: #0672b4;
   padding-top: 18px;
@@ -225,6 +234,11 @@ a.cart p{
 .tap-contact .boxx2 img{
   height: 40px;
 }
+.box-menu .menux{
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
 .box-menu .menux .h{
   background-color: #0672b4;
   border-radius: 8px 8px 0px 0px ;
@@ -239,17 +253,15 @@ a.cart p{
   padding-left: 0px;
   list-style: none;
   background-color: #f8f8f8;
-  padding-left: 20px;
-  padding-right: 20px;
+ 
 }
-.menux ul li{
-  padding: 10px 15px;
-}
-
-.menux ul li:not(:last-child){
+ 
+.menux ul li:not(:last-child) a{
   border-bottom: 1px solid #c8c8c8 !important;
 }
-
+.menux ul li:hover,.menux ul li.active{
+  background-color: #e2e2e2; 
+}
 .menux ul li a{
   color: #4c4c4c; 
   font-size: 14px;
@@ -258,7 +270,7 @@ a.cart p{
   display: block; 
   width: 100%; 
   height: 100%;
-  
+  padding: 10px 15px;
 }
  
 .menux ul li a img{
@@ -269,6 +281,7 @@ a.cart p{
   font-family: Kanit-Medium;
   font-size: 30px;
   color: #535353;
+  text-transform: uppercase;
 }
 .form-xf label{
   color: #282828;
@@ -303,7 +316,7 @@ a.cart p{
   color: #000000;
   text-transform: uppercase;
   font-family: Kanit-Regular;
-  font-size: 15px;
+  font-size: 14px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -379,6 +392,18 @@ footer{
   padding: 5px 25px;
   border-radius: 30px;
   margin-bottom: 15px;
+}
+.submitx2{
+  color: #fff;
+  background-color: #0f5fa6;
+  border: none; 
+  text-transform: uppercase;
+  font-family: Kanit-Medium;
+  font-size: 28px;
+  padding: 5px 55px;
+  border-radius: 30px;
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 .submitx img{
   height: 20px;
@@ -495,4 +520,196 @@ a.login-face img{
   height: 40px;
   margin-left: -6px;
   background-color: #ffffff;
+}
+.banner-top{
+  background-image: url("../images/bg-top.png");
+  height: 220px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+}
+
+.banner-top h1{ 
+  color: #0f5fa6;
+  font-family: Kanit-Bold;
+  font-size: 60px;
+  text-align: center;
+  line-height: 230px;
+  text-transform: uppercase;
+}
+.box-show-m {
+  background-color: #0672b4;
+  border-radius: 12px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.box-show-m h5{
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-family: Kanit-Medium;
+}
+.box-show-m h2{
+  text-align: center;
+  color: #fff;
+  font-size: 60px;
+  font-family: Kanit-Medium;
+}
+.box-show-m h4{
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-family: Kanit-Medium;
+}
+
+.pa-h3{
+  background-color: #ededed;
+  color: #000000;
+  font-size: 30px;
+  font-family: Kanit-Medium;
+  width: 100%;
+  padding: 12px 25px; 
+  margin-bottom: 0px;
+  border-radius:18px 18px 0px 0px;
+  text-transform: uppercase;
+}
+.box-add{
+  border:2px solid #ededed;
+  min-height: 500px;
+  border-radius: 0px 0px 18px 18px;
+  padding-bottom: 30px;
+}
+.warn{
+  background-color: #f26666;
+  color: #fff;
+  font-size: 20px;
+  font-family: Kanit-Regular;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.tb1 table thead tr{
+  background-color: #0f5fa6;
+}
+.tb1 table thead tr th{
+  padding-left: 30px;
+  font-family: Kanit-Regular;
+  color: #fff;
+  font-size: 22px;
+}
+.tb1 table tbody tr{
+  background-color: #ededed;
+}
+.tb1 table tbody tr td{
+  padding-left: 30px;
+  font-family: Kanit-Light;
+  color: #000;
+  font-size: 18px;
+}
+.tb1 table tbody tr td img{
+  height: 22px;
+}
+
+.form-bank .form-group{
+  font-family: Kanit-Light;
+  color: #000;
+  font-size: 18px;
+}
+
+.form-bank .form-group input,.form-bank .form-group select{
+  background-color: #ededed;
+  height: 45px;
+  border-radius: 14px;
+  border:none;
+
+  padding-left: 20px;
+}
+
+.form-bank2 .form-group input{
+  /*background-color: #ededed;*/
+  height: 45px;
+  border-radius: 0px;
+  border:none;
+  border-bottom: 1px solid #ededed;
+  padding-left: 20px;
+  letter-spacing: 3px;
+}
+.form-bank2 .form-group{
+  font-family: Kanit-Light;
+  color: #000;
+  font-size: 18px;
+}
+
+.text-b-art{
+  color: #ff0101;
+  font-size: 18px;
+  font-family: Kanit-Regular;
+}
+.text-b-art span{
+  padding-right: 30px;
+}
+.text-b-art a{
+  color: #0f5fa6;
+  font-size: 18px;
+  text-decoration: underline;
+  font-family: Kanit-Medium;
+}
+
+
+.bot-b{
+ 
+  background-image: url("../images/bot-b.png");
+ 
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+ 
+.tb2 table thead tr{
+  background-color: #ededed;
+}
+.tb2 table thead tr th{
+  padding-left: 30px;
+  font-family: Kanit-Regular;
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.tb2 table tbody tr{
+  background-color: #f8f8f8;
+}
+.tb2 table tbody tr td{
+  padding-left: 30px;
+  font-family: Kanit-Bold;
+  color: #000;
+  font-size: 20px;
+  
+}
+.tb2 table tbody tr td img{
+  height: 22px;
+}
+
+
+.tb2 table tbody tr:not(:last-child) td{
+  border-bottom: 1px solid #ededed;
+}
+
+
+.tb2 table tr:last-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.tb2 table tr:last-child th:last-child {
+  border-top-right-radius: 10px;
+}
+.tb2 table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.tb2 table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
 }
