@@ -713,3 +713,147 @@ a.login-face img{
 .tb2 table tr:last-child td:last-child {
   border-bottom-right-radius: 10px;
 }
+
+.topup-game .topup{
+  margin-top: 30px;
+}
+.topup-game .topup .cardx{
+  background-color: #f3f3f3;
+  padding: 15px;
+  margin-top: -5px;
+  padding-bottom: 25px;
+}
+.topup-game .topup .cardx h3{
+  text-transform: uppercase;
+  font-family: Kanit-Medium;
+  color: #000;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 5px;
+}
+.topup-game .topup .cardx h3 a{
+  color: inherit;
+}
+
+.topup-game .topup .cardx .bt1{
+  color: #fff;
+  background-color: #2196f3;
+  font-family: Kanit-Regular;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px 16px;
+  border-radius: 30px;
+}
+.topup-game .topup .cardx .bt2{
+  color: #fff;
+  background-color: #00b900;
+  font-family: Kanit-Regular;
+  font-size: 12px;
+  text-align: center;
+  padding: 4px 16px;
+  border-radius: 30px;
+}
+.topup-game .topup .cardx .bt1 img{
+  height: 14px;
+  margin-right: 5px;
+}
+.topup-game .topup .cardx .bt2 img{
+  height: 14px;
+  margin-right: 5px;
+}
+
+
+
+
+.form-bank3 .form-group{
+  font-family: Kanit-Light;
+  color: #000;
+  font-size: 15px;
+}
+
+.form-bank3 .form-group input,.form-bank3 .form-group select{
+  background-color: #ededed;
+  height: 40px;
+  border-radius: 14px;
+  border:none;
+  text-transform: uppercase;
+  padding-left: 24px;
+  color: #424242;
+  font-family: Kanit-Medium;
+}
+
+ 
+.ex-now {
+  list-style-type: none;
+  margin: 25px 0 0 0;
+  padding: 0;
+}
+
+.ex-now li {
+  float: left;
+  margin: 0 5px 0 0;
+  width: 100px;
+  height: 40px;
+  position: relative;
+}
+
+.ex-now label,
+.ex-now input {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.ex-now input[type="radio"] {
+  opacity: 0.01;
+  z-index: 100;
+}
+
+.ex-now input[type="radio"]:checked+label,
+.Checked+label {
+  background-color: #f26666; 
+  color: #fff;
+}
+
+.ex-now label {
+  padding: 4px;
+  background-color: #ebebeb; 
+  border: 1px solid #f68e56;
+  cursor: pointer;
+  z-index: 90;
+  border-radius: 6px;
+  text-align: right;
+  font-family: Kanit-Medium;
+  columns: #000;
+  padding-right: 45px;
+}
+.ex-now label:after{
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/coin.png") ;
+  background-size: 15px 15px;
+  top: 10px;
+  background-repeat: no-repeat;
+  right: 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+.ex-now label:hover {
+  background: #f26666;
+  color: #fff;
+}
+.btn-cart{
+  background-color: #f85252;
+  border-radius: 8px;
+  padding: 10px 10px; 
+  padding-left: 8px;
+  margin-left: 10px;
+}
+.btn-cart img{
+  height: 22px;  
+}
