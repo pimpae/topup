@@ -68,7 +68,9 @@ a:hover{
 /*.banner {
   height: 100vh;
 }*/ 
-
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
 .navbar{
   background-color: #fcfcfc;
   border-top: 4px solid #0672b4;
