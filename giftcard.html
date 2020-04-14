@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>  
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet" type="text/css" />
+   <link href="fonts/web-fonts-with-css/css/all.css" rel="stylesheet">
+   
+   <link rel="icon" type="image/x-icon" href="images/logo.png">
+   <title> Topup </title>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg  fixed-top">
+         <div class="container">
+            <a href="#" class="navbar-brand">                
+               <img src="images/logo.png" width="200" alt="" class="d-inline-block align-middle mr-2">      
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#navbarM" aria-controls="navbarM" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarM" class="collapse navbar-collapse">
+               <ul class="navbar-nav ">
+                  <li class="nav-item">
+                     <a href="index.html" class="nav-link">หน้าแรก </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     เป๋าตังค์
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="bank_wallet.html">แจ้งโอนธนาคาร</a>
+                        <a class="dropdown-item" href="true_money.html">บัตรทรูมันนี่</a>
+                        <a class="dropdown-item" href="true_wallet.html">แจ้งโอนวอลเล็ท</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">เติมเงินเกมมือถือ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     บัตรเติมเงินมือถือ
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="ex_cash.html">บัตร ex cash</a>
+                        <a class="dropdown-item" href="razer_card.html">บัตร razer pin</a>
+                        <a class="dropdown-item" href="mycard.html">บัตร my card</a>
+                     </div>
+                  </li>
+                  <li class="nav-item active">
+                     <a href="#" class="nav-link">Gift Card</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">วิธีเติมเงิน</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">เกี่ยวกับเรา</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="container-fluid sub-h">
+         <div class="container">
+            <div class="col">
+               <div class="row">
+                  <div class="col-lg-6 col-12 text-left">
+                     <form class="search-form" >
+                        <div class="col search-box">
+                           <select class="form-control bo1" id="category">
+                              <option disabled selected>Category</option>
+                              <option>Category 1</option>
+                              <option>Category 2</option>
+                              <option>Category 3</option>
+                              <option>Category 4</option>
+                          </select>
+                          <input type="text" class="form-control bo2" id="search" placeholder="insert text here">
+                          <button type="submit" class="btn-search"><img src="images/search.png"></button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-lg-6 col-12 text-right">                     
+                     <a href="#" class="btn-regis" data-toggle="modal" data-target="#registerModel"><img src="images/key.png"> สมัครสมาชิก</a> 
+                     <a href="#" class="btn-regis" data-toggle="modal" data-target="#loginModel"><img src="images/user.png"> เข้าสู่ระบบ</a>
+                     <a href="#" class="cart">
+                        สินค้าในตะกร้า <img src="images/cart.png">
+                        <p>5</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section class="banner-top">
+         <h1>gift card</h1>
+      </section>
+ 
+
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+
+      <section class="box-menu">
+         <div class="col">
+            <div class="row justify-content-center">
+               <div class="col-lg-8">
+                  <div class="row">
+                     <div class="col-lg-3">
+                        <div class="clearfix">&nbsp;</div>
+                        <div class="col menux">
+                           <div class="h">
+                              เป๋าตังค์
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#"><img src="images/bank.png"> แจ้งโอนธนาคาร</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/truemoney.png"> บัตรทรูมันนี่</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/wallet.png"> แจ้งโอนวอลเล็ท</a>
+                              </li>
+                           </ul>
+                        </div>
+
+                        <div class="col menux">
+                           <div class="h">
+                              บัตรเติมเงินมือถือ
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#"><img src="images/ex_cash.png"> Ex Cash</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/razer_pin.png"> Razer Pin</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/my_card.png"> My Card</a>
+                              </li>
+                           </ul>
+                        </div>
+
+
+                        <div class="col menux">
+                           <div class="h">
+                              เติมเกมเงินมือถือ
+                           </div>
+                           <ul>
+                              <li>
+                                 <a href="#"><img src="images/rom.png"> Ragnarok</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/black_desert.png"> Black desert mobile </a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/pubg.png"> Pubg mobile</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/identity.png"> Indentity mobile</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/wara_pic.png"> Wara store mobile</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/7dead.png"> 7 deadly sins</a>
+                              </li>
+                           </ul>
+                        </div>
+                        <div class="col">
+                           <div class="fb-page" data-href="https://www.facebook.com/1004827733037197/" data-tabs="timeline" data-width="" data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/1004827733037197/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/1004827733037197/">เจ้น้ำการค้า</a></blockquote></div>
+                        </div>
+
+                     </div>
+                     <div class="col-lg-9">
+                        <div class="col none-pad">
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h3 class="h3xs">บัตรกิฟการ์ด ( Gift Card )</h3>
+                              </div>
+                              <div class="col-lg-6 form-xf">
+                                 <div class="col">
+                                    <div class="form-group row">
+                                       <label for="selx" class="col-4 text-right">ตัวกรอง</label>
+                                       <select class="form-control col-8" id="selx">
+                                          <option>Razer Gold Malaysia</option>
+                                          <option>MY CARD (MY) 3000 point</option>
+                                          <option>EX Cash card</option>
+                                       </select>
+                                    </div>
+                                 </div>                              
+                              </div>
+                           </div> 
+
+                           <div class="row box-inline">
+                              <div class="col-lg-4">
+                                 <a href="#">
+                                    <div class="bbx">
+                                       <img src="images/itune.png" class="img-fluid d-block mx-auto">
+                                    </div>
+                                    <div class="mx">
+                                       <h3>100$ ITUNE GIFT CARD USA</h3>
+                                       <a href="#" class="btn-rou">
+                                          ดูรายละเอียดสินค้า
+                                       </a>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-4">
+                                 <a href="#">
+                                    <div class="bbx">
+                                       <img src="images/google.png" class="img-fluid d-block mx-auto">
+                                    </div>
+                                    <div class="mx">
+                                       <h3>25$ Google Play Gift Card USA</h3>
+                                       <a href="#" class="btn-rou not">
+                                          ดูรายละเอียดสินค้า
+                                       </a>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-4">
+                                 <a href="#">
+                                    <div class="bbx">
+                                       <img src="images/steam.png" class="img-fluid d-block mx-auto">
+                                    </div>
+                                    <div class="mx">
+                                       <h3>20$ STEAM GIFT CARD USA</h3>
+                                       <a href="#" class="btn-rou not">
+                                          ดูรายละเอียดสินค้า
+                                       </a>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-4">
+                                 <a href="#">
+                                    <div class="bbx">
+                                       <img src="images/razer_card.png" class="img-fluid d-block mx-auto">
+                                    </div>
+                                    <div class="mx">
+                                       <h3>100$ ITUNE GIFT CARD USA</h3>
+                                       <a href="#" class="btn-rou not">
+                                          ดูรายละเอียดสินค้า
+                                       </a>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-4">
+                                 <a href="#">
+                                    <div class="bbx">
+                                       <img src="images/my_card_card.png" class="img-fluid d-block mx-auto">
+                                    </div>
+                                    <div class="mx">
+                                       <h3>25$ Google Play Gift Card USA</h3>
+                                       <a href="#" class="btn-rou not">
+                                          ดูรายละเอียดสินค้า
+                                       </a>
+                                    </div>
+                                 </a>
+                              </div>
+                              <div class="col-lg-4">
+                                 <a href="#">
+                                    <div class="bbx">
+                                       <img src="images/ex_cash_card.png" class="img-fluid d-block mx-auto">
+                                    </div>
+                                    <div class="mx">
+                                       <h3>20$ STEAM GIFT CARD USA</h3>
+                                       <a href="#" class="btn-rou not">
+                                          ดูรายละเอียดสินค้า
+                                       </a>
+                                    </div>
+                                 </a>
+                              </div>
+                           </div>
+                         
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+
+      <section class="bot-b"> 
+         <div class="col">
+            <img src="images/logo_card.png" class="img-fluid d-block mx-auto">
+         </div> 
+      </section>      
+   </main>
+
+
+   
+   
+   <footer>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="container">
+         <div class="col">
+            <div class="row">
+               <div class="col-lg-4 col-12">
+                  <img src="images/logo2.png" class="img-fluid float-left  ">
+               </div>
+               <div class="col-lg-1 mb-x"></div>
+               <div class="col-lg-7 col-12">
+                  <div class="clearfix">&nbsp;</div>
+                  <img src="images/bank_logo.png" class="img-fluid float-right ">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="container-fluid footer-bot">
+         Coppyright   topupcenter. all resived
+      </div>
+   </footer>
+
+   <div class="modal fade" id="registerModel">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">            
+            <div class="modal-body">
+               <div class="clearfix">&nbsp;</div>
+               <h3>ลงทะเบียน</h3>
+               <div class="clearfix">&nbsp;</div>
+               <form class="form-x">
+                  <div class="form-group">
+                     <input type="text" class="form-control" name="usename" placeholder="usename">
+                  </div>
+                  <div class="form-group">
+                     <input type="text" class="form-control" name="email" placeholder="E-mail">
+                  </div>
+                  <div class="form-group">
+                     <input type="password" class="form-control" name="password" placeholder="password">
+                  </div>
+                  <div class="text-center">
+                     <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+                  </div>
+                  <div class="clearfix">&nbsp;</div>
+                  <div class="text-center">
+                     <button type="submit" class="submitx"><img src="images/user1.png"> creat account</button>
+                  </div>
+
+                  <div class="text-center">
+                     <a href="#" class="text-log">
+                        หากมีบัญชีอยู่แล้ว <span>เข้าสู่ระบบ</span>
+                     </a>
+                  </div>
+                  <div class="clearfix">&nbsp;</div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="modal fade" id="loginModel">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content">            
+            <div class="modal-body">
+               <div class="clearfix">&nbsp;</div>
+               <h3>เข้าสู่ระบบ</h3>
+               <div class="clearfix">&nbsp;</div>
+               <form class="form-x">
+                  <div class="form-group">
+                     <input type="text" class="form-control" name="usename" placeholder="usename">
+                  </div>                 
+                  <div class="form-group">
+                     <input type="password" class="form-control" name="password" placeholder="password">
+                  </div> 
+
+                  <div class="clearfix">&nbsp;</div>
+                  <div class="row justify-content-center">
+                     <div class="col-lg-9 col-12">
+                        <a href="#" class="login-web"><img src="images/key2.png"> LOGIN to website</a>
+                        <br> <br> 
+                        <div class="dixd">
+                           <h4>or</h4>
+                        </div>
+                        <br> 
+                        <a href="#" class="login-goog"><img src="images/googlex.png"></i> LOGIN with google</a>
+                        
+                        <br> 
+                        <a href="#" class="login-face"><i class="fab fa-facebook-f"></i> LOGIN with facebook</a>
+
+                     </div>
+                  </div>
+          
+
+            
+                  </div>
+                  <div class="clearfix">&nbsp;</div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+ 
+
+   <div id="fb-root"></div>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v6.0&appId=3087114857965890&autoLogAppEvents=1"></script>
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+ 
+
+ 
+</html>
