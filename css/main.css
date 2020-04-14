@@ -865,3 +865,102 @@ a.login-face img{
 .btn-cart img{
   height: 22px;  
 }
+
+
+.bor-lin{
+  border-radius: 6px;
+  border:1px solid #ebebeb; 
+}
+
+.box-detail h3{
+  font-size: 24px;
+  color: #000;
+  font-family: Kanit-Regular;
+}
+.box-detail p{
+  font-size: 18px;
+  color: #535353;
+  font-family: Kanit-Light;
+ 
+}
+
+.btx1{
+  color: #fff;
+  background-color: #2196f3;
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 12px;
+  width: 100%;
+  display: block;
+}
+.btx2{
+  color: #fff;
+  background-color: #00b900;
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  text-align: center;
+  padding: 8px 16px;
+  border-radius: 12px;
+  width: 100%;
+  display: block;
+}
+
+.input-group input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.input-group input::-webkit-outer-spin-button,
+.input-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+ 
+.input-group {
+  clear: both; 
+  position: relative;
+}
+
+.input-group input[type='button'] {
+  background-color: #fff;
+  min-width: 38px;
+  width: auto;
+  transition: all 300ms ease;
+  border:1px solid #b7b7b7;
+}
+
+.input-group .button-minus,
+.input-group .button-plus {
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+.input-group .quantity-field {
+  position: relative;
+  height: 38px;
+  left: -6px;
+  
+  width: 62px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+.button-plus {
+  left: -13px;
+}
+
+.input-group input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  font-family: Kanit-Regular;
+  color: #000;
+  border:1px solid #b7b7b7; 
+  padding-left: 25px;
+}
