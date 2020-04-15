@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>  
+   <link href="css/bootstrap.css" rel="stylesheet">
+   <link href="css/main.css" rel="stylesheet" type="text/css" />
+   <link href="fonts/web-fonts-with-css/css/all.css" rel="stylesheet">
+   
+   <link rel="icon" type="image/x-icon" href="images/logo.png">
+   <title> Topup </title>
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg  fixed-top">
+         <div class="container">
+            <a href="#" class="navbar-brand">                
+               <img src="images/logo.png" width="200" alt="" class="d-inline-block align-middle mr-2">      
+            </a>
+            <button type="button" data-toggle="collapse" data-target="#navbarM" aria-controls="navbarM" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+            <div id="navbarM" class="collapse navbar-collapse">
+               <ul class="navbar-nav ">
+                  <li class="nav-item">
+                     <a href="index.html" class="nav-link">หน้าแรก </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     เป๋าตังค์
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="bank_wallet.html">แจ้งโอนธนาคาร</a>
+                        <a class="dropdown-item" href="true_money.html">บัตรทรูมันนี่</a>
+                        <a class="dropdown-item" href="true_wallet.html">แจ้งโอนวอลเล็ท</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">เติมเงินเกมมือถือ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     บัตรเติมเงินมือถือ
+                     </a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="ex_cash.html">บัตร ex cash</a>
+                        <a class="dropdown-item" href="razer_card.html">บัตร razer pin</a>
+                        <a class="dropdown-item" href="mycard.html">บัตร my card</a>
+                     </div>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">Gift Card</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">วิธีเติมเงิน</a>
+                  </li>
+                  <li class="nav-item">
+                     <a href="#" class="nav-link">เกี่ยวกับเรา</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="container-fluid sub-h">
+         <div class="container">
+            <div class="col">
+               <div class="row">
+                  <div class="col-lg-6 col-12 text-left">
+                     <form class="search-form" >
+                        <div class="col search-box">
+                           <select class="form-control bo1" id="category">
+                              <option disabled selected>Category</option>
+                              <option>Category 1</option>
+                              <option>Category 2</option>
+                              <option>Category 3</option>
+                              <option>Category 4</option>
+                          </select>
+                          <input type="text" class="form-control bo2" id="search" placeholder="insert text here">
+                          <button type="submit" class="btn-search"><img src="images/search.png"></button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-lg-6 col-12 text-right">                     
+                     <div class="user-top">
+                        <a href="#">
+                           <img src="images/cat.jpg" class="user-imgx shadow-lg">
+                        </a>
+                        <div class="menup">   
+                           <div class="dropdown">
+                              <button type="button" class="btn listx" data-toggle="dropdown"  >
+                              เจ้น้ำการค้า<i class="fas fa-angle-down"></i>
+                              </button>
+                              <div class="dropdown-menu">
+                                 <a class="dropdown-item" href="#">
+                                    หน้าแรก
+                                 </a>
+                                 <a class="dropdown-item" href="#">
+                                    เติมเงินเกมมือถือ
+                                 </a>
+                                 <a class="dropdown-item" href="#">
+                                    วิธีเติมเงิน
+                                 </a>
+                                
+                              </div>
+                           </div>
+                        </div>
+                        <div class="logoutx">
+                           <a href="#">
+                              <img src="images/logout.png"> ออกจากระบบ
+                           </a>
+                        </div>
+                        
+                     </div>
+                     <div class="cart-div">
+                        <a href="#" class="cart">
+                           สินค้าในตะกร้า <img src="images/cart.png">
+                           <p>5</p>
+                        </a>
+                     </div>
+                     
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <main>
+      <section class="banner-top">
+         <h1>ประวัติการสั่งซื้อ</h1>
+      </section>
+ 
+
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+
+      <section class="box-menu">
+         <div class="col">
+            <div class="row justify-content-center">
+               <div class="col-lg-8">
+                  <div class="row">
+                     <div class="col-lg-3">
+                 
+                        <div class="col menux2">
+                           <ul>
+                              <li>
+                                 <a href="#"><img src="images/user2.png"> ข้อมูลส่วนตัว</a>
+                              </li>
+                              <li>
+                                 <a href="#"><img src="images/cart2.png"> ตะกร้าสินค้า</a>
+                              </li>
+                              <li class="active">
+                                 <a href="#"><img src="images/tag.png"> ประวัตการสั่งซื้อ</a>
+                              </li>
+                           </ul>
+                        </div>                     
+                        <a href="#" class="btn-loguot">
+                           <img src="images/logout.png"> ออกจากระบบ
+                        </a>
+
+                     </div>
+                     <div class="col-lg-9">
+                        <div class="col">
+                           
+                           <div class="row">
+                              <div class="col-lg-6">
+                                 <h3 class="h3xs">สรุปประวัติการสั่งซื้อ</h3>
+                              </div>
+                              <div class="col-lg-6 form-xf">
+                                 <div class="col">
+                                    <div class="form-group row">
+                                       <label for="selx" class="col-4 text-right">ตัวกรอง</label>
+                                       <select class="form-control col-8" id="selx">
+                                          <option>Razer Gold Malaysia</option>
+                                          <option>MY CARD (MY) 3000 point</option>
+                                          <option>EX Cash card</option>
+                                       </select>
+                                    </div>
+                                 </div>                              
+                              </div>
+                           </div> 
+
+
+
+                           <div class="col none-pad table-responsive tb3 shadow">
+                              <table class="table table-borderless ">
+                                 <thead>
+                                    <tr>
+                                       <th>ชื่อสินค้าสินค้า</th>
+                                       <th>ประเภท</th>
+                                       <th>วันเวลา</th>
+                                       <th>ราคา</th>
+                                       <th>รายละเอียด</th>
+                                    </tr>
+                                 </thead>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <img src="images/ex_cash.png" class="x"> บัตรเติมเงิน Ex Cash
+                                       </td>
+                                       <td>บัตรเติมเกม</td>
+                                       <td>
+                                          10:10am / 01012563
+                                       </td>
+                                       <td>500 บาท</td>
+                                       <td>
+                                          <a href="#" class="btn-des" data-toggle="modal" data-target="#detailCash">ดูรายละเอียด</a>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>
+                                          <img src="images/razer_pin.png" class="x"> บัตรเติมเงิน Razer pin
+                                       </td>
+                                       <td>บัตรเติมเกม</td>
+                                       <td>
+                                          10:10am / 01012563
+                                       </td>
+                                       <td>500 บาท</td>
+                                       <td>
+                                          <a href="#" class="btn-des" data-toggle="modal" data-target="#detailCash">ดูรายละเอียด</a>
+                                       </td>
+                                    </tr>
+               
+                                    <tr>
+                                       <td>
+                                          <img src="images/my_card.png" class="x"> บัตรเติมเงิน Ex Cash
+                                       </td>
+                                       <td>บัตรเติมเกม</td>
+                                       <td>
+                                          10:10am / 01012563
+                                       </td>
+                                       <td>500 บาท</td>
+                                       <td>
+                                          <a href="#" class="btn-des" data-toggle="modal" data-target="#detailCash">ดูรายละเอียด</a>
+                                       </td>
+                                    </tr>
+               
+                                 </tbody>
+                         
+                              </table>
+                              <div class="tb-footer"></div>
+                           </div>
+
+                           <div class="clearfix">&nbsp;</div>
+
+ 
+
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+
+      <section class="bot-b"> 
+         <div class="col">
+            <img src="images/logo_card.png" class="img-fluid d-block mx-auto">
+         </div> 
+      </section>      
+   </main>
+
+
+   
+   
+   <footer>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="container">
+         <div class="col">
+            <div class="row">
+               <div class="col-lg-4 col-12">
+                  <img src="images/logo2.png" class="img-fluid float-left  ">
+               </div>
+               <div class="col-lg-1 mb-x"></div>
+               <div class="col-lg-7 col-12">
+                  <div class="clearfix">&nbsp;</div>
+                  <img src="images/bank_logo.png" class="img-fluid float-right ">
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="clearfix">&nbsp;</div>
+      <div class="container-fluid footer-bot">
+         Coppyright   topupcenter. all resived
+      </div>
+   </footer>
+
+   
+
+   <div class="modal fade" id="detailCash">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+         <div class="modal-content" style="border: 4px solid #f26666">            
+            <div class="modal-body">
+               <button type="button" class="close" data-dismiss="modal">&times;</button>
+               <div class="clearfix">&nbsp;</div>
+
+               <div class="col fop">
+                  <img src="images/my_card.png" class="img-fluid d-block mx-auto">
+                  <h3>รหัสบัตรของคุณ</h3>
+                  <div class="row">
+                     <div class="col-lg-4 text-right">
+                        <label>Serial No</label>
+                     </div>
+                     <div class="col-lg-8">
+                        <input type="text" class="form-control" name="" value="xxx xxx xxx x" disabled="">     
+                     </div>
+                     <div class="col-lg-4 text-right">
+                        <label>PIN</label>
+                     </div>
+                     <div class="col-lg-8">
+                        <input type="text" class="form-control" name="" value="xxx xxx xxx x" disabled="">     
+                     </div>
+                  </div>
+               </div>
+
+               <div class="clearfix">&nbsp;</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+ 
+
+   <div id="fb-root"></div>
+   <script async defer crossorigin="anonymous" src="https://connect.facebook.net/th_TH/sdk.js#xfbml=1&version=v6.0&appId=3087114857965890&autoLogAppEvents=1"></script>
+   <script src='https://www.google.com/recaptcha/api.js'></script>
+   <script type="text/javascript">
+      function readURL(input) {
+         if (input.files && input.files[0]) {
+           var reader = new FileReader();
+           reader.onload = function(e) {
+               $('#imagePreview').css('background-image', 'url('+e.target.result +')');
+               $('#imagePreview').hide();
+               $('#imagePreview').fadeIn(650);
+           }
+           reader.readAsDataURL(input.files[0]);
+         }
+      }
+      $("#image_name").change(function() {
+          readURL(this);
+      });
+   </script>
+
+
+   <script type="text/javascript">
+      function incrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal)) {
+          parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+        } else {
+          parent.find('input[name=' + fieldName + ']').val(0);
+        }
+      }
+
+      function decrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal) && currentVal > 0) {
+          parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+        } else {
+          parent.find('input[name=' + fieldName + ']').val(0);
+        }
+      }
+
+      $('.input-group').on('click', '.button-plus', function(e) {
+        incrementValue(e);
+      });
+
+      $('.input-group').on('click', '.button-minus', function(e) {
+        decrementValue(e);
+      });
+ 
+
+      $(document).ready(function(){
+ 
+         $(".checkout").click(function(){        
+            $('input:checkbox').removeAttr('checked','checked');
+         });
+
+      })
+
+   </script>
+
+
+</body>
+ 
+
+ 
+</html>

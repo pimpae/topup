@@ -23,8 +23,13 @@
   font-style: normal;
   font-variant:initial;
 }
-
-
+@font-face{
+  font-family: FontAwesome;
+  src: url(../fonts/fonts/FontAwesome.otf);
+  font-style: normal;
+  font-variant:initial;
+}
+ 
  
 /*html {
   scroll-behavior: smooth;
@@ -675,6 +680,7 @@ a.login-face img{
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
+  border-top: 1px solid #e1e1e1;
 }
  
 .tb2 table thead tr{
@@ -907,23 +913,23 @@ a.login-face img{
   display: block;
 }
 
-.input-group input[type="button"] {
+.box-detail .input-group input[type="button"] {
   -webkit-appearance: button;
   cursor: pointer;
 }
 
-.input-group input::-webkit-outer-spin-button,
-.input-group input::-webkit-inner-spin-button {
+.box-detail .input-group input::-webkit-outer-spin-button,
+.box-detail .input-group input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
  
-.input-group {
+.box-detail .input-group {
   clear: both; 
   position: relative;
 }
 
-.input-group input[type='button'] {
+.box-detail .input-group input[type='button'] {
   background-color: #fff;
   min-width: 38px;
   width: auto;
@@ -931,8 +937,8 @@ a.login-face img{
   border:1px solid #b7b7b7;
 }
 
-.input-group .button-minus,
-.input-group .button-plus {
+.box-detail .input-group .button-minus,
+.box-detail .input-group .button-plus {
   font-weight: bold;
   height: 38px;
   padding: 0;
@@ -940,7 +946,7 @@ a.login-face img{
   position: relative;
 }
 
-.input-group .quantity-field {
+.box-detail .input-group .quantity-field {
   position: relative;
   height: 38px;
   left: -6px;
@@ -952,11 +958,11 @@ a.login-face img{
   resize: vertical;
 }
 
-.button-plus {
+.box-detail  .button-plus {
   left: -13px;
 }
 
-.input-group input[type="number"] {
+.box-detail .input-group input[type="number"] {
   -moz-appearance: textfield;
   -webkit-appearance: none;
   font-family: Kanit-Regular;
@@ -1072,10 +1078,10 @@ button.dropdown-toggle.listx:active{
   background-color: #e2e2e2; 
 }
 .menux2 ul li:first-child {
-  border-radius: 6px 6px 0px 0px;
+  border-radius: 12px 12px 0px 0px;
 }
 .menux2 ul li:last-child {
-  border-radius:0px 0px 6px 6px;
+  border-radius:0px 0px 12px 12px;
 }
 .menux2 ul li:not(:last-child) a{
   border-bottom: 1px solid #c8c8c8 !important;
@@ -1234,3 +1240,361 @@ button.dropdown-toggle.listx:active{
   font-size: 24px;
   font-family: Kanit-Regular;
 }
+
+
+.tb3{
+  padding-bottom: 30px;
+  border-radius: 0px 0px 10px 10px;
+  background-color: white;
+}
+.tb3 table thead tr{
+  background-color: #0672b4;
+}
+ 
+.tb3 table thead tr th{
+  text-align: center;
+  font-family: Kanit-Bold;
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+
+}
+  
+
+.tb3 table tbody tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.tb3 table tbody tr:nth-child(even) {
+  background-color: #eaeaea;
+}
+
+
+.tb3 table tbody tr td{
+  text-align: center;
+  font-family: Kanit-Regular;
+ 
+  font-size: 18px;
+  vertical-align: middle;
+  color: #424242;
+}
+.tb3 table tbody tr td img.a{
+  width: 30px;
+  height: auto;
+  margin-right: 15px;
+
+}
+.tb3 table tbody tr td img.x{  
+  width: 90px;
+  height: auto;
+  margin-right: 10px; 
+}
+/*.tb3 table tfoot tr td{
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 0px 0px  10px 10px;
+}*/
+ 
+.tb3 table tbody tr:not(:last-child) td{
+  border-bottom: 1px solid #ededed;
+}
+
+ 
+.tb3 table tr:last-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.tb3 table tr:last-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.tb-footer{
+  height: 10px;
+} 
+
+.round-chk {
+  display: block;
+  position: relative;
+  margin-top: -10px;
+  
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 50%;
+  margin-left: 45px;
+}
+ 
+.round-chk input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+ 
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #d2d2d2;
+  border-radius: 50%;
+}
+ 
+.round-chk:hover input ~ .checkmark {
+  background-color: #d2d2d2;
+} 
+.round-chk input:checked ~ .checkmark {
+  background-color: #d2d2d2;
+} 
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+} 
+.round-chk input:checked ~ .checkmark:after {
+  display: block;
+} 
+.round-chk .checkmark:after {
+  font-family: FontAwesome;
+  content: "\f00c";
+  padding-left: 5px;
+  margin-top: -5px;
+  color: #737373;
+}
+
+
+
+
+.tb3 .input-group input[type="button"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+.tb3 .input-group input::-webkit-outer-spin-button,
+.tb3 .input-group input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+ 
+.tb3 .input-group {
+  clear: both; 
+  position: relative;
+}
+
+.tb3 .input-group input[type='button'] {
+  background-color: transparent;
+  min-width: 38px;
+  width: auto;
+  transition: all 300ms ease;
+}
+.tb3 .input-group .button-minus{
+  border:1px solid #a1a1a1;
+  border-radius: 15px 0px  0px 15px;
+  border-right: none;
+}
+.tb3 .input-group .button-plus{
+  border:1px solid #a1a1a1;
+  border-radius:  0px 15px 15px 0px;
+  border-left: none;
+}
+
+
+
+.tb3 .input-group .button-minus,
+.tb3 .input-group .button-plus {
+  font-weight: bold;
+  height: 38px;
+  padding: 0;
+  width: 38px;
+  position: relative;
+}
+
+.tb3 .input-group .quantity-field {
+  position: relative;
+  height: 38px;
+  left: -6px;
+  
+  width: 55px;
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 0 5px;
+  resize: vertical;
+}
+
+.tb3 .button-plus {
+  left: -13px;
+}
+
+.tb3 .input-group input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  font-family: Kanit-Regular;
+  color: #000;
+  border:1px solid #b7b7b7; 
+  padding-left: 25px;
+  background-color: transparent;
+}
+
+.quantity-field:focus, .quantity-field.focus {
+  outline: none;
+  box-shadow: none;
+}
+.button-minus:focus, .button-minus.focus {
+  outline: none;
+  box-shadow: none;
+}
+.button-plus:focus, .button-plus.focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.div-botx{
+  border-radius: 10px;
+
+}
+.div-botx h4{
+  font-family: Kanit-Regular;
+  color: #000;
+  font-size: 24px;
+}
+.div-botx h4 span{
+  font-size: 36px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.checkout{
+  width: 220px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 8px 30px;
+  border-radius: 12px;
+  background-color: #228dcf;
+  display: inline;
+  margin-right: 10px;
+  font-family: Kanit-Regular;
+}
+.delete{
+  width: 220px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 8px 30px;
+  border-radius: 12px;
+  background-color: #f85252;
+  display: inline;
+  margin-right: 10px;
+  font-family: Kanit-Regular;
+}
+.checkout:hover{
+  color: #fff;
+}
+.delete:hover{
+  color: #fff;
+}
+.checkout i{
+  margin-right: 5px;
+}
+.delete i{
+  margin-right: 5px;
+}
+.text-right-x{
+  text-align: right;
+  margin-top: 10px;
+}
+
+.btn-des{
+  border:2px solid #0672b4;
+  font-family: Kanit-Regular;
+  font-size: 16px;
+  text-align: center;
+  padding: 4px 20px;
+  background-color: transparent;
+  border-radius: 30px;
+  color: #000;
+}
+.btn-des:hover{
+  border:2px solid #0672b4;
+  color: #fff;
+  background-color: #0672b4;
+}
+
+.fop h3{
+  font-family: Kanit-Regular;
+  font-size: 30px;
+  color: #fff;
+}
+.fop label{
+  color: #494949;
+  font-family: Kanit-Medium;
+  font-size: 22px;
+  margin-top: 15px;
+}
+.fop input{
+  color: #494949;
+  font-family: Kanit-Light;
+  font-size: 24px;
+  background-color: #c9c9c9;
+  border: none;
+  border-radius: 12px;
+  height: 45px;
+  margin-top: 15px;
+  padding-left: 25px;
+}
+
+ 
+
+.accordion .card-header:after {
+  font-family: 'FontAwesome';  
+  content: "\f077";
+  float: right; 
+  color: #fff;
+  background-color: #0672b4;
+  border-radius: 100%;
+  padding: 3px 7px;
+}
+.accordion .card-header.collapsed:after {
+  content: "\f078"; 
+  background-color: #cdcdcd;
+}
+.accordion .card-header{
+  background-color: #fff;
+}
+.accordion .card-header[aria-expanded="true"]{
+  background-color: #f8f8f8;
+}
+
+.accordion{
+  margin-bottom: 15px;
+  border-radius: 12px; 
+}
+.accordion .card{
+  
+}
+.accordion .card-header .card-title{
+  font-family: Kanit-Medium;
+  font-size: 22px;
+  color: #535353;
+  /*border-radius: 12px;
+  border:1px solid #ebebeb;*/
+}
+ 
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+ 
