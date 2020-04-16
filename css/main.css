@@ -1773,3 +1773,10 @@ button.dropdown-toggle.listx:active{
     width: 220px; 
   }
 }
+
+
+.navbar .bb-brand   {
+width: 100%:;
+  margin: auto;
+  display: block; 
+}
